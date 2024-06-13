@@ -8,4 +8,19 @@ use Illuminate\Database\Eloquent\Model;
 class UsedFeature extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        "feature_id",
+        "credits",
+        
+        "user_id",
+       
+    ];
+
+    protected function casts(): array 
+    {
+        return [
+            "data" => "array",        
+        ];
+    }
+
 }
