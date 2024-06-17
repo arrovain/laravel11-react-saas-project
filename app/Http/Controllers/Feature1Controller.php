@@ -11,6 +11,9 @@ class Feature1Controller extends Controller
     public function __construct()
     {
 
+        $this->feature = Feature::where("route_name", "feature1.index")
+          ->where('active', true)
+          ->firstOrFail();
     }
     public function index()
     {
