@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace App\Modals;
 
 use App\Observers\UserObserver;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
