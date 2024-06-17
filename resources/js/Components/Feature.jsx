@@ -16,6 +16,16 @@ export default function Feature({ feature, answer, children }) {
             }
         >
             <Head title="Feature 1" />
+
+            <div className="py-12">
+                <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                    {answer !== null && (
+                        <div className="mb-3 py-3 px-5 rounded text-white bg-emerald-600 text-xl">
+                            result of calculation: {answer}
+                        </div>
+                    )}
+                </div>
+            </div>
         </AuthenticatedLayout>
     );
 }
