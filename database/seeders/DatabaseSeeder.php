@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Feature;
+use App\Models\Package;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -34,7 +35,22 @@ class DatabaseSeeder extends Seeder
             'description' =>'Calculate sum of two number',
             'active' => true,
         ]);
-    
+        Package::create([
+            'name'=>'Basic',
+            'price'=> 5,
+            'credits'=>20
+        ]);
+        Package::create([
+            'name'=>'Silver',
+            'price'=> 20,
+            'credits'=>100
+        ]);
+        Package::create([
+            'name'=>'Gold',
+            'price'=> 50,
+            'credits'=>500
+        ]);
+
 
     }
     
