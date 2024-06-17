@@ -14,6 +14,8 @@ export default function Feature({ feature, answer, children }) {
                     {feature.name}
                 </h2>
             }
-        ></AuthenticatedLayout>
+        >
+            <Head title="Feature 1" />
+        </AuthenticatedLayout>
     );
 }
