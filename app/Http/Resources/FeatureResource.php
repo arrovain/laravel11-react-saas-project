@@ -7,6 +7,8 @@ use Illuminate\Http\Resources\Json\JsonResource;
 
 class FeatureResource extends JsonResource
 {
+
+    public static $wrap = false;
     /**
      * Transform the resource into an array.
      *
@@ -22,6 +24,7 @@ class FeatureResource extends JsonResource
             'description' => $this->description,
             'required_credits'=>$this->required_credits,
             'active' => $this->active,
-        ]
+        ];
+    
     }
 }

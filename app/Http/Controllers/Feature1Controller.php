@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Feature;
+use App\Models\UsedFeature;
+use App\Http\Resources\FeatureResource;
 
 class Feature1Controller extends Controller
 {
@@ -27,7 +30,7 @@ class Feature1Controller extends Controller
     public function calculate(Request $request)
     {
         $user = $request->user();
-        if ($user->available_credits < this->feature->required_credits){
+        if ($user->available_credits < $this->feature->required_credits){
             return back();
         }
         $data = $request -> validate ([
@@ -45,6 +48,8 @@ class Feature1Controller extends Controller
             'credits_id' => $this->feature->required_credits,
             'data' => $data,
         ]);
+
+        return to_route('feature1.index')->with('answer', $number1 + $number2);
 
 
     }
