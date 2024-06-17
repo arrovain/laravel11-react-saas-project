@@ -8,12 +8,12 @@ export default function Feature({ feature, answer, children }) {
 
     return (
         <AuthenticatedLayout
-        user={auth.user}
-        header={
-            
-        }
-        >
-
-        </AuthenticatedLayout>
-    )
+            user={auth.user}
+            header={
+                <h2 className="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+                    {feature.name}
+                </h2>
+            }
+        ></AuthenticatedLayout>
+    );
 }
