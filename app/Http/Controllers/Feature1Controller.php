@@ -30,5 +30,9 @@ class Feature1Controller extends Controller
         if ($user->available_credits < this->feature->required_credits){
             return back();
         }
+        $data = $request -> validate ([
+            'number1' => ['required', 'numeric'],
+            'number2' => ['required', 'numeric'],
+        ])
     }
 }
