@@ -24,6 +24,12 @@ export default function Feature({ feature, answer, children }) {
                             result of calculation: {answer}
                         </div>
                     )}
+                    <div className="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg relative">
+                        {availableCredits !== null &&
+                            feature.required_credits > availableCredits && (
+                                <div className="absolute left-0 top-0 right-0 bottom-0 flex flex-col item-center justify-center bg-whşte/70 gap-3"></div>
+                            )}
+                    </div>
                 </div>
             </div>
         </AuthenticatedLayout>
