@@ -39,6 +39,13 @@ class Feature1Controller extends Controller
 
         $user->decreaseCredits($this->feature->required_credits);
 
+        UsedFeature::create([
+            'feature_id' => $this->feature->id,
+            'user_id' => $user->id,
+            'credits_id' => $this->feature->required_credits,
+            'data' => $data,
+        ]);
+
 
     }
 }
