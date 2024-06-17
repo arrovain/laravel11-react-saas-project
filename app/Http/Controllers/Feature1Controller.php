@@ -10,6 +10,14 @@ class Feature1Controller extends Controller
 
     public function __construct()
     {
+
+    }
+    public function index()
+    {
+
+    }
+    public function calculate(Request $request)
+    {
         
     }
 }
