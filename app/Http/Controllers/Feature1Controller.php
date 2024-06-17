@@ -33,6 +33,10 @@ class Feature1Controller extends Controller
         $data = $request -> validate ([
             'number1' => ['required', 'numeric'],
             'number2' => ['required', 'numeric'],
-        ])
+        ]);
+        $number1 = (float) $data['number1'];
+        $number2 = (float) $data['number2'];
+
+
     }
 }
