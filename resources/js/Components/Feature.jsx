@@ -5,4 +5,15 @@ export default function Feature({ feature, answer, children }) {
     const { auth } = usePage().props;
 
     const availableCredits = auth.user.available_credits;
+
+    return (
+        <AuthenticatedLayout
+        user={auth.user}
+        header={
+            
+        }
+        >
+
+        </AuthenticatedLayout>
+    )
 }
