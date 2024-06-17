@@ -6,5 +6,10 @@ use Illuminate\Http\Request;
 
 class Feature1Controller extends Controller
 {
-    //
+    public ?Feature $feature = null;
+
+    public function __construct()
+    {
+        
+    }
 }
