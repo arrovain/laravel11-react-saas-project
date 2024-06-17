@@ -37,6 +37,8 @@ class Feature1Controller extends Controller
         $number1 = (float) $data['number1'];
         $number2 = (float) $data['number2'];
 
+        $user->decreaseCredits($this->feature->required_credits);
+
 
     }
 }
