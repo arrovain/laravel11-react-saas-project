@@ -6,5 +6,8 @@ import { useForm } from "@inertiajs/react";
 import Feature from "@/Components/Feature";
 
 export default function Index({ feature, answer }) {
-    const { data, setData, post, reset, errors, processing } = useForm({});
+    const { data, setData, post, reset, errors, processing } = useForm({
+        number1: "",
+        number2: "",
+    });
 }
