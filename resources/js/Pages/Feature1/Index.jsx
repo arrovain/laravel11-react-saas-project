@@ -5,4 +5,4 @@ import PrimaryButton from "@/Components/PrimaryButton";
 import { useForm } from "@inertiajs/react";
 import Feature from "@/Components/Feature";
 
-export default function Index() {}
+export default function Index({ feature, answer }) {}
