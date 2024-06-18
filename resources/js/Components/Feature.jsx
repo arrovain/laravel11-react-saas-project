@@ -56,6 +56,7 @@ export default function Feature({ feature, answer, children }) {
                             <p className="text-sm italic text-right">
                                 Requires [feature.required_credits] credits
                             </p>
+                            {children}
                         </div>
                     </div>
                 </div>
