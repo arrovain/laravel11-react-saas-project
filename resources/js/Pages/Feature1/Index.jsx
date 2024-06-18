@@ -13,6 +13,11 @@ export default function Index({ feature, answer }) {
 
     const submit = (e) => {
         e.preventDefault();
-        post();
+
+        post(route("feature1.calculate"), {
+            onSuccess() {
+                reset();
+            },
+        });
     };
 }
