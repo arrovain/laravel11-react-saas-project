@@ -51,6 +51,12 @@ export default function Feature({ feature, answer, children }) {
                                     </div>{" "}
                                 </div>
                             )}
+                        <div className="p-8 text-gray-400 border-b pb-4">
+                            <p>{feature.description}</p>
+                            <p className="text-sm italic text-right">
+                                Requires [feature.required_credits] credits
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
