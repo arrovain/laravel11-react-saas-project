@@ -33,6 +33,8 @@ export default function Index({ feature, answer }) {
                         value={data.number1}
                         onChange={(e) => setData("number1", e.target.value)}
                     />
+
+                    <InputError message={errors.number1} className="mt-2" />
                 </div>
             </form>
         </Feature>
