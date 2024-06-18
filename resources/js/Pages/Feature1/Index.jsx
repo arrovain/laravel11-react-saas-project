@@ -36,6 +36,18 @@ export default function Index({ feature, answer }) {
 
                     <InputError message={errors.number1} className="mt-2" />
                 </div>
+                <div>
+                    <InputLabel htmlFor="number2" value="Number 2" />
+
+                    <TextInput
+                        id="number2"
+                        name="number"
+                        type="text"
+                        value={data.number2}
+                        className="mt-1 block w-full"
+                        onChange={(e) => setData("number2", e.target.value)}
+                    />
+                </div>
             </form>
         </Feature>
     );
