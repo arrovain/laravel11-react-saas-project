@@ -10,4 +10,9 @@ export default function Index({ feature, answer }) {
         number1: "",
         number2: "",
     });
+
+    const submit = (e) => {
+        e.preventDefault();
+        post();
+    };
 }
