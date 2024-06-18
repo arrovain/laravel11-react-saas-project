@@ -48,6 +48,9 @@ export default function Index({ feature, answer }) {
                         onChange={(e) => setData("number2", e.target.value)}
                     />
                 </div>
+                <div className="flex items-center justify-end mt-4 col-span-2">
+                    <PrimaryButton className="ms-4"></PrimaryButton>
+                </div>
             </form>
         </Feature>
     );
