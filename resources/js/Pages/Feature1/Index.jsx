@@ -23,7 +23,11 @@ export default function Index({ feature, answer }) {
 
     return (
         <Feature feature={feature} answer={answer}>
-            <form className="p-8 grid grid-cols-2 gap-3"></form>
+            <form onSubmit={submit} className="p-8 grid grid-cols-2 gap-3">
+                <div>
+                    <InputLabel htmlFor="number1" value="Number 1" />
+                </div>
+            </form>
         </Feature>
     );
 }
