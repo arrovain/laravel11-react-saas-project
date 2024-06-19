@@ -15,5 +15,11 @@ class CreditController extends Controller
     {
 
     }
+    public function success(){
+
+    }
+    public function cancel(){
+        
+    }
     
 }
