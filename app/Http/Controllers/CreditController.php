@@ -6,5 +6,14 @@ use Illuminate\Http\Request;
 
 class CreditController extends Controller
 {
-    //
+    public function index()
+    {
+
+    }
+
+    public function buyCredits(Package $package)
+    {
+
+    }
+    
 }
