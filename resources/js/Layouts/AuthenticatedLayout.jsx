@@ -44,6 +44,13 @@ export default function Authenticated({ user, header, children }) {
                         </div>
 
                         <div className="hidden sm:flex sm:items-center sm:ms-6">
+                            <span className="text-white flex gap-3">
+                                <img
+                                    src="https://t3.ftcdn.net/jpg/01/94/67/20/360_F_194672016_pf5HYgLlm6XlSwuL7JE4Pqvdq0RFqK7V.jpg"
+                                    className="w-[20px]"
+                                    alt=""
+                                />
+                            </span>
                             <div className="ms-3 relative">
                                 <Dropdown>
                                     <Dropdown.Trigger>
