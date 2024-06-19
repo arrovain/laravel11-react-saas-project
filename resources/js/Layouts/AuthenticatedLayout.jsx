@@ -50,6 +50,7 @@ export default function Authenticated({ user, header, children }) {
                                     className="w-[20px]"
                                     alt=""
                                 />
+                                {user.available_credits} Credits
                             </span>
                             <div className="ms-3 relative">
                                 <Dropdown>
